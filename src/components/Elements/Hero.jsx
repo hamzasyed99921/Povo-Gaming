@@ -7,14 +7,36 @@ import { BsYoutube } from "react-icons/bs";
 import { BsReddit } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import Particals from "./Particals";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 const Hero = () => {
   return (
     <>
       <section className="hero_section">
-          <div>
-          <Particals/>
-          </div>
+        <div>
+          <Particals />
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-md-6 ">
@@ -26,7 +48,6 @@ const Hero = () => {
                 lover. Povo is deflationary in it's nature
               </h3>
               <button href="#" className="white_btn ">
-                {" "}
                 Trade on PancakeSwap
               </button>
               <button href="#" className="trans_btn">
@@ -79,11 +100,60 @@ const Hero = () => {
             <div className="col-md-6">
               <div className="hero_right">
                 <div className="carosole">
-                  <img
-                    src="assets/images/car1.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <Carousel
+                    swipeable={false}
+                    draggable={true}
+                    // showDots={true}
+                    responsive={responsive}
+                    ssr={true} // means to render carousel on server-side.
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={1000}
+                    keyBoardControl={false}
+                    customTransition="all .9"
+                    transitionDuration={2000}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    // deviceType={this.props.deviceType}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                  >
+                    <div className="">
+                      <img
+                        src="assets/images/car1.png"
+                        className="img-fluid w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/images/car3.png "
+                        className="img-fluid w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/images/car4.png"
+                        className="img-fluid w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/images/car1.png"
+                        className="img-fluid w-100"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/images/car2.png"
+                        className="img-fluid w-100"
+                        alt=""
+                      />
+                    </div>
+                  </Carousel>
                 </div>
                 <div className="token_add mt-4 d-flex justify-content-center">
                   <span>token address</span>
@@ -95,24 +165,57 @@ const Hero = () => {
                   />
                 </div>
                 <div className="row mt-4 ">
-                  <div className="col-md-4"><img src="assets/images/certik.png" className="img-fluid" alt="" /></div>
-                  <div className="col-md-4"><img src="assets/images/pcs.png" className="img-fluid" alt="" /></div>
-                  <div className="col-md-4"><img src="assets/images/xt.png" className="img-fluid" alt="" /></div>
+                  <div className="col-md-4">
+                    <img
+                      src="assets/images/certik.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div className="col-md-4">
+                    <img
+                      src="assets/images/pcs.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div className="col-md-4">
+                    <img
+                      src="assets/images/xt.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </section>
-        <div className="hero_bottom">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-6"><div className="hero_bottom_img d-flex justify-content-center"><img src="assets/images/yahoo.png" className="img-fluid" alt="" /></div></div>
-                <div className="col-md-6"><div className="hero_bottom_img d-flex justify-content-center"><img src="assets/images/benzinga.png" className="img-fluid" alt="" /></div></div>
+      <div className="hero_bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="hero_bottom_img d-flex justify-content-center">
+                <img
+                  src="assets/images/yahoo.png"
+                  className="img-fluid"
+                  alt=""
+                />
               </div>
             </div>
+            <div className="col-md-6">
+              <div className="hero_bottom_img d-flex justify-content-center">
+                <img
+                  src="assets/images/benzinga.png"
+                  className="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </>
   );
 };
