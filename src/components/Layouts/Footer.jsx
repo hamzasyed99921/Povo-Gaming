@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <footer className='footer'>
           <div className="container d-flex justify-content-between ">
-            <div className='footer_left d-flex '>
+            <div className='footer_left d-flex flex-wrap'>
               <img src="assets/images/logo.png" className='img-fluid' alt="" />
               <p className='text-white '>Decentralized Spot and Futures Trading on Binance Smart Chain</p>
               
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <hr className='text-white container' />
               <div className='text-white text-center' style={{padding: '8px 0 24px', fontSize:'18px',fontWeight: '600'}}>
-                © 2022 Povo Production Limited
+                © 2022 Povo Production
               </div>
       </footer>
     </>
