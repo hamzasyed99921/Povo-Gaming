@@ -254,7 +254,7 @@ const Features = () => {
         <Modal.Footer style={{backgroundColor: '#000'}}></Modal.Footer>
       </Modal>
       <div className="vedio" style={{backgroundColor: 'black'}}>
-        <div className="container py-5">
+        {/* <div className="container py-5">
       <video controls="" autoplay="autoplay" name="media" muted>
   <source
     src="https://povoneww.s3.ap-southeast-1.amazonaws.com/cs.mp4"
@@ -262,7 +262,7 @@ const Features = () => {
     width="1440"
     height="641"
   />
-</video>
+</video> */}
       {/* <iframe
           className=" mb-5 col-12"
           width="1340"
@@ -273,7 +273,7 @@ const Features = () => {
           allow="accelerometer; autoplay=1&mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe> */}
-        </div>
+        {/* </div> */}
       </div>
     </>
   );
