@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+// $Btn-color: '#c62828';
+// $Btn-hover: '#8f1818';
+
+// Navbar Section Start
+.navbar {
+  background-color: #2d061b;
+  .navbar-brand {
+    width: 25%;
+    img {
+      width: 16%;
+    }
+  }
+
+  .navbar-nav {
+    li {
+      padding-right: 20px;
+    }
+    a {
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+
+      &:hover {
+        color: #c62828 !important;
+      }
+    }
+  }
+  .last_link {
+    a {
+      padding: 8px 20px !important;
+      background-color: #c62828 !important;
+      border-radius: 4px;
+
+      &:hover {
+        color: white !important;
+        background-color: #8f1818 !important;
+      }
+    }
+  }
+}
+
+// Navbar Section End
+
+// Hero Section Start
+.hero_section {
+  background-image: url("./media/images/hero_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  .container {
+    padding: 210px 12px 40px;
+
+    h1 {
+      color: white;
+      font-size: 54px;
+      text-transform: uppercase;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-shadow: 0px 8px 12px rgba(236, 19, 19, 0.4) !important;
+    }
+    h3 {
+      padding: 16px 0 0;
+      color: #e0e0e0;
+      font-size: 28px;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      margin: 0 61px 10px 0;
+    }
+    .white_btn {
+      color: #8b0000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 19px;
+      background-color: white;
+      padding: 12px 50px;
+      margin: 20px 0 0;
+      border-radius: 5px;
+      border: none;
+
+      &:hover {
+        background-color: #c62828;
+        color: white;
+      }
+    }
+    .trans_btn {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 19px;
+      color: white;
+      padding: 12px 50px;
+      border: 2px solid white;
+      background-color: transparent;
+      border-radius: 5px;
+      margin: 20px 0 0 30px;
+
+      &:hover {
+        background-color: #c62828;
+        color: white;
+        border-color: #c62828;
+      }
+    }
+  }
+  .hero_list {
+    p {
+      color: white;
+      font-size: 22px;
+    }
+    li {
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
+
+.hero_right {
+  .carosole {
+    width: 100%;
+
+    img {
+      padding: 0 136px;
+      width: 90%;
+    }
+  }
+  .token_add {
+    span {
+      color: white;
+      text-transform: capitalize;
+      background-color: #c62828;
+      padding: 8px 14px;
+      font-size: 16px;
+    }
+    input {
+      background-color: #2d061b;
+      color: white;
+      padding: 8px 14px;
+      border: 1px solid #c62828;
+      border-radius: 0%;
+      font-size: 16px;
+      width: 60%;
+    }
+  }
+}
+
+.hero_bottom {
+  background-color: #0a0a0a;
+
+  .row {
+    padding: 30px 0;
+
+    .hero_bottom_img img {
+      width: 50%;
+    }
+  }
+}
+
+//  .thumbs{
+//     display: none !important;
+// }
+
+//  .control-dots {
+//     display: none !important;
+// }
+
+//  .slide .legend{
+//     display: none !important;
+// }
+//  .control-next.control-arrow{
+//     display: none !important;
+// }
+// .carousel-status{
+//     display: none !important;
+// }
+
+// Hero Section End
+
+// Platform section start
+.platform_bg {
+  background-image: url("./media/images/platform_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 90px 12px;
+
+  .container {
+    padding: 60px 0;
+  }
+
+  .platform_right {
+    h1 {
+      color: #8b0000;
+      font-family: "Roboto Mono", monospace;
+      font-size: 42px;
+    }
+    span {
+      color: white;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    button {
+      font-size: 20px;
+      padding: 8px 16px;
+      margin: 16px 0;
+      background: #c62828;
+      color: #e0e0e0;
+    }
+  }
+  .platform_list {
+    p {
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+    }
+    li {
+      font-size: 18px;
+      color: white;
+    }
+  }
+}
+
+// Platform section end
+
+// Exclusive Section Start
+.exclusive_bg {
+  background-image: url("./media/images/exclusive.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 90px 12px;
+
+  .container {
+    padding: 60px 12px 70px;
+    h1 {
+      color: #8b0000;
+      font-family: "Roboto Mono", monospace;
+      font-size: 42px;
+    }
+    span {
+      color: white;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    button{
+        padding: 10px 34px;
+        background-color: #c62828;
+        color: white;
+        border-radius: 10px;
+        margin: 0 50px 0 0;
+        border: none;
+        
+    }
+  }
+.react-multiple-carousel__arrow  {
+    display: none !important;
+}
+ 
+
+}
+// Exclusive Section End
+
+// Feature Section Start
+.frature_bg {
+  background-image: url("./media/images/attach_bg.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  .container {
+    padding: 60px 12px 70px;
+    h2 {
+      color: white;
+      font-family: "Roboto Mono", monospace;
+      font-size: 42px;
+      font-weight: 700;
+    }
+}
+.card {
+    padding: 20px 20px 48px ;
+    height: 27rem;
+    .card_img img {
+      width: 25%;
+    }
+    .card-title {
+      font-size: 20px;
+      font-weight: 650;
+    }
+    .card-text {
+      color: #212529;
+      font-size: 18px;
+    }
+    .red_txt{
+        color: #8b0000;
+        font-size: 25px;
+        margin: 20px 0 8px;
+        font-weight: 500;
+
+    } 
+    .white_card{
+        font-size: 20px;
+        color: #777777;
+        font-weight: 400;
+    }
+    .white_txt{
+          color: white;
+          font-size: 25px;
+          margin: 20px 0 8px;
+          font-weight: 500;
+     
+        }
+        .red_para{
+            font-size: 19px;
+            color: white;
+            font-weight: 400;
+        }
+        .read_more{
+            Button{
+                position: absolute;
+            right: 16px;
+            bottom: 10px;
+            color: #ffc107 !important ;
+            border: none;
+            // text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            }
+        }
+  }
+}
+// Feature Section End
+
+// Work section start
+.work_bg {
+  background-color: #2d061b;
+  height: 100%;
+
+  .container {
+    padding: 90px 12px 70px;
+  }
+}
+// Work section end
+
+// Benifit Section
+.benifit_bg {
+  background-image: url("./media/images/exclusive.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  .container {
+    padding: 90px 12px 70px;
+  }
+  h1 {
+    font-size: 42px;
+    margin: 10px 0 8px;
+    color: white;
+
+    span {
+      font-weight: 700;
+    }
+  }
+  .benifit_txt {
+    margin: 88px 0 0;
+    padding: 0 12px;
+
+    p {
+      margin: 30px 0 8px;
+      font-size: 22px;
+      font-weight: 650;
+      color: white;
+    }
+    li {
+      margin: 15px 0 0;
+      font-size: 18px;
+      color: white;
+      list-style: square;
+    }
+    h5 {
+      margin: 30px 0 8px;
+      font-size: 22px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+// Benifit section End
+
+// Presale section
+.presale_bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.4)),
+    url("./media/images/attach_bg.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70%;
+
+  .container {
+    padding: 70px 12px 100px;
+  }
+  h1 {
+    color: white;
+
+    span {
+      color: #8b0000;
+    }
+  }
+  .row {
+    margin: 48px 0 0;
+    padding: 48px 0 0;
+
+    h2 {
+      color: white;
+      font-size: 34px;
+      font-weight: 650;
+    }
+
+    button {
+      margin: 25px 0 0;
+      color: #8b0000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+// Presale section end
+
+// Mission section start
+.mission_bg {
+  background-image: url("./media/images/platform_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 90px 12px;
+
+  .row {
+    img {
+      width: 70%;
+    }
+    h2 {
+      color: white;
+      font-size: 42px;
+      font-weight: 600;
+      margin: 30px 0 30px;
+
+      span {
+        font-weight: 500;
+        color: #8b0000;
+        margin: 0 0 0 10px;
+      }
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      margin: 48px 0 16px;
+      font-weight: 500;
+    }
+  }
+}
+// Mission section end
+
+// Vision section
+.vision_bg {
+  background-image: url("./media/images/vision.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 90px 12px;
+
+  h2 {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0 30px;
+    font-weight: 600;
+
+    span {
+      color: #8b0000;
+      font-weight: 500;
+    }
+  }
+  p {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+  }
+}
+// Vision section end
+
+// Tokenomics section
+.tokenomic_bg {
+  background-image: url("./media/images/platform_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 90px 12px;
+
+  h2 {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0 30px;
+    font-weight: 600;
+
+    span {
+      color: #8b0000;
+      font-weight: 500;
+    }
+  }
+  p {
+    color: #26a0d3;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  h3 {
+    color: #ffc107;
+    font-size: 34px;
+    font-weight: 400;
+
+    span {
+      color: #26a0d3;
+      font-weight: 600;
+    }
+  }
+}
+// Tokenomics Section End
+
+// Roadmap Section
+.roadmap_bg {
+  background-color: #000000;
+  padding: 90px 12px;
+}
+// Roadmap secction end
+
+// Protect section
+.protect_bg {
+  background-image: url("./media/images/exclusive.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 90px 12px;
+
+  h2 {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0 30px;
+    font-weight: 600;
+
+    span {
+      color: #8b0000;
+      font-weight: 500;
+    }
+  }
+  .row {
+    ul {
+      padding: 48px 12px 0;
+      margin: 48px 0 0;
+      li {
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+      }
+    }
+  }
+}
+// Protect section end
+
+// Faqs section
+.faq_bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.4)),
+    url("./media/images/attach_bg.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70%;
+  padding: 90px 12px;
+}
+
+
+.faq-row {
+  padding: 10px !important;
+  width: 70% !important;
+  margin: 17px auto !important;
+  border-radius: 10px !important;
+  background-color: #000000 !important;
+  border: none !important;
+}
+.styles_faq-row__2YF3c {
+  padding-top: 0px !important;
+}
+.row-title-text {
+  cursor: pointer !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: white !important;
+  margin: 10px 0 0 20px !important;
+}
+
+.styles_row-content-text__2sgAB {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: white !important;
+  margin: 10px 0 0 20px !important;
+}
+
+.styles_row-body__1NvUo .styles_faq-row__2YF3c {
+  flex-direction: column;
+  position: relative;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  margin-bottom: 20px;
+  background-color: var(--faq-bg-color, white);
+}
+
+.styles_faq-row-wrapper__3vA1D {
+  background-color: transparent !important;
+}
+
+  .styles_icon-wrapper__2cftw
+  svg {
+  fill: white !important;
+}
+
+// Faqs section end
+
+.friend_bg{
+    background-color: #0a0a0a;
+    height: 100%;
+
+    .container {
+        padding: 70px 12px 100px;
+
+        h2 {
+            color: white;
+            font-size: 42px;
+            margin: 10px 0 30px;
+            font-weight: 600;
+        
+            span {
+              color: #8b0000;
+              font-weight: 400;
+            }
+          }
+      }
+}
+
+// Friend povo section end
+
+
+.footer {
+    padding: 50px 0 0;
+    background-color: #2d061b;
+  
+    .footer_left {
+      width: 35%;
+      p {
+        font-size: 20px;
+        margin: 15px 20px;
+      }
+    }
+     img {
+      width: 20%;
+    }
+    // .footer_right {
+    //   width: 70%;
+  
+    //   a {
+    //     color: white;
+    //     text-decoration: none;
+    //     font-size: 18px;
+    //   }
+    // }
+  }
+
+  .btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: white !important;
+    //  background: transparent url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23000%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e) center/1em auto no-repeat; 
+    border: 0;
+    border-radius: 0.375rem;
+    opacity: .5;
+}
+
+@media screen and (max-width: 770px) {
+    .vedio{
+        display: none;
+    }
+}
