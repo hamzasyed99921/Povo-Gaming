@@ -54,7 +54,7 @@ const Hero = () => {
                 Whitepaper
               </button>
               <div className="row">
-                <div className="col-md-12" style={{ padding: "16px 0" }}>
+                <div className="col-md-12 " style={{ padding: "16px 0" }}>
                   <a href="#">
                     <FaMediumM className="my-3 mx-2" color="white" size={30} />
                   </a>

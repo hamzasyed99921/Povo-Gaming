@@ -21,7 +21,7 @@ const Header = () => {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2  mb-lg-0">
+            <ul className="navbar-nav ms-auto text-center mb-2  mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link " aria-current="page" href="#">
                   Home
