@@ -246,12 +246,12 @@ const Features = () => {
         </div>
       </div>
 
-      <Modal show={show} onHide={handleClose} >
-        <Modal.Header closeButton style={{fontSize: '20px', backgroundColor: 'white'}}>
-          <Modal.Title style={{fontSize: '20px', color: '#8b0000'}}>{data.title}</Modal.Title>
+      <Modal show={show} onHide={handleClose} style={{padding: '40px 20px'}} >
+        <Modal.Header closeButton style={{fontSize: '20px', backgroundColor: '#000'}}>
+          <Modal.Title style={{fontSize: '20px', color: '#8b0000',backgroundColor: '#000',padding: '8px 15px'}}>{data.title}</Modal.Title>
         </Modal.Header >
-        <Modal.Body style={{fontSize: '18px', color: 'white',backgroundColor: '#000'}}>{data.body}</Modal.Body>
-        <Modal.Footer style={{backgroundColor: '#000'}}></Modal.Footer>
+        <Modal.Body style={{fontSize: '18px', color: 'white',backgroundColor: '#000',padding: '65px 15px'}}>{data.body}</Modal.Body>
+        {/* <Modal.Footer style={{backgroundColor: '#000'}}></Modal.Footer> */}
       </Modal>
       <div className="vedio" style={{backgroundColor: 'black'}}>
         {/* <div className="container py-5">
