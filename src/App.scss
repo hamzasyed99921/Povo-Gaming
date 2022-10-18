@@ -356,6 +356,7 @@
         font-size: 20px;
         color: #777777;
         font-weight: 400;
+        text-overflow: ellipsis !important;
     }
     .white_txt{
           color: white;
@@ -368,6 +369,7 @@
             font-size: 19px;
             color: white;
             font-weight: 400;
+            text-overflow: ellipsis;
         }
         .read_more{
             Button{
