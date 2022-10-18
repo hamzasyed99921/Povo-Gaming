@@ -34,10 +34,11 @@ const Hero = () => {
   return (
     <>
       <section className="hero_section">
-        <div>
-          <Particals />
-        </div>
+       
         <div className="container">
+        {/* <div>
+          <Particals />
+        </div> */}
           <div className="row">
             <div className="col-md-6 ">
               <h1>

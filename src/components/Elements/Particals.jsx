@@ -19,14 +19,14 @@ const Particals = () => {
       options={{
         "fullScreen": {
             "enable": true,
-            "zIndex": -1
+            "zIndex": 1
         },
-        // "style": {
-        //     "position": "absolute",
-        //     "height" : "100%",
-        //     "top": "0",
-        //     "left":"0"
-        //   },
+        "style": {
+            "position": "absolute",
+            "height" : "100%",
+            "top": "0",
+            "left":"0"
+          },
         "particles": {
             "number": {
                 "value": 20,
