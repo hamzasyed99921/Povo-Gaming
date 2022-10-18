@@ -30,7 +30,7 @@ const responsive = {
   },
 };
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <>
       <section className="hero_section">
@@ -102,22 +102,24 @@ const Hero = () => {
               <div className="hero_right">
                 <div className="carosole">
                   <Carousel
-                    swipeable={false}
-                    draggable={true}
-                    // showDots={true}
                     responsive={responsive}
-                    ssr={true} // means to render carousel on server-side.
+                    arrows
+                    autoPlay
+                    autoPlaySpeed={3000}
+                    centerMode={false}
+                    className=""
+                    containerClass="container-with-dots"
+                    dotListClass=""
+                    draggable
+                    focusOnSelect={false}
                     infinite={true}
-                    autoPlay={true}
-                    autoPlaySpeed={1000}
-                    keyBoardControl={false}
-                    customTransition="all .9"
-                    transitionDuration={2000}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    // deviceType={this.props.deviceType}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
+                    itemClass=""
+                    keyBoardControl
+                    minimumTouchDrag={80}
+                    pauseOnHover
+                    renderArrowsWhenDisabled={false}
+                    renderButtonGroupOutside={false}
+                    renderDotsOutside={false}
                   >
                     <div className="">
                       <img
